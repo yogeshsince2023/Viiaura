@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Cinzel", "Playfair Display", Georgia, serif;
+
+  --color-surface-canvas: #FAF7F2;
+  --color-surface-card: #FFFFFF;
+  --color-surface-subtle: #F3EFEA;
+  --color-surface-dark: #161413;
+
+  --color-brand-primary: #1C1917;
+  --color-brand-secondary: #57534E;
+  --color-brand-accent: #C86446;
+  --color-brand-gold: #D4AF7A;
+}
+
+@layer base {
+  :root {
+    --surface-canvas: #FAF7F2;
+    --surface-card: #FFFFFF;
+    --surface-subtle: #F3EFEA;
+    --surface-dark: #161413;
+
+    --text-primary: #1C1917;
+    --text-secondary: #44403C;
+    --text-muted: #78716C;
+
+    --accent-warm: #C86446;
+    --accent-gold: #D4AF7A;
+    --border-delicate: #E7E2DA;
+  }
+
+  html {
+    background-color: #FAF7F2;
+    color: #1C1917;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1C1917;
+    background-color: #FAF7F2;
+    font-weight: 450;
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+  }
+
+  /* Headings: Rich, Bold, Sculptural Editorial Typography */
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: "Playfair Display", Georgia, serif;
+    color: #1C1917;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+
+  /* Display Royal Serif for Brand Title & Key Accents */
+  .font-display {
+    font-family: "Cinzel", Georgia, serif;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+  }
+
+  button, a {
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  ::selection {
+    background-color: #F7EDE8;
+    color: #C86446;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF7A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C86446;
+}
+
+/* Page Transition Subtle Smooth Animation */
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-enter {
+  animation: pageFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.glass-nav {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
