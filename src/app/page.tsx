@@ -135,7 +135,7 @@ export default function HomePage() {
             {/* Left Column: Visual Artwork */}
             <div className="relative aspect-[4/3] rounded-sm overflow-hidden border-2 border-[#E7E2DA] shadow-2xl group">
               <Image
-                src="/images/collection-editorial.jpg"
+                src="/images/handmade-candle.jpg"
                 alt="Viiaura Handcrafted Candle Artistry"
                 fill
                 className="object-cover object-center group-hover:scale-103 transition-transform duration-700"
@@ -313,7 +313,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-[#E7E2DA] group shadow-md">
               <Image
-                src="/images/collection-editorial.jpg"
+                src="/images/ivory-candles.jpg"
                 alt="Table Centerpiece candle arrangement"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -327,7 +327,7 @@ export default function HomePage() {
 
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-[#E7E2DA] group shadow-md">
               <Image
-                src="/images/hero-lit.jpg"
+                src="/images/candle-still-life.jpg"
                 alt="Living room evening candle glow"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -341,7 +341,7 @@ export default function HomePage() {
 
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-[#E7E2DA] group sm:col-span-2 lg:col-span-1 shadow-md">
               <Image
-                src="/images/hero-unlit.jpg"
+                src="/images/strong-shadows.jpg"
                 alt="Tactile sculpted candle silhouette"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"

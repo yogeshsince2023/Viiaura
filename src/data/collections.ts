@@ -7,7 +7,7 @@ export const COLLECTIONS: Collection[] = [
     slug: "sculptural",
     tagline: "Free-standing architectural forms for modern interiors",
     description: "Designed as interior art pieces before they are lit. Uncontained geometric, ribbed, and spiral silhouettes that cast intricate light and shadows.",
-    coverImage: "/images/collection-editorial.jpg",
+    coverImage: "/images/sculptural-candle.jpg",
     featuredDesignsCount: 6,
   },
   {
@@ -16,7 +16,7 @@ export const COLLECTIONS: Collection[] = [
     slug: "signature",
     tagline: "Viiaura's defining hand-poured silhouettes",
     description: "The core design language of Viiaura. Balanced proportions, velvety natural matte wax finish, and serene burn quality.",
-    coverImage: "/images/hero-unlit.jpg",
+    coverImage: "/images/signature-candle.jpg",
     featuredDesignsCount: 4,
   },
   {
@@ -25,7 +25,7 @@ export const COLLECTIONS: Collection[] = [
     slug: "minimalist-vessels",
     tagline: "Tactile ceramics and amber vessels designed for reuse",
     description: "Handcrafted stone, ceramic and heat-tempered glassware filled with clean botanical wax for calm, extended daily rituals.",
-    coverImage: "/images/collection-editorial.jpg",
+    coverImage: "/images/handmade-candle.jpg",
     featuredDesignsCount: 4,
   },
   {
@@ -34,7 +34,7 @@ export const COLLECTIONS: Collection[] = [
     slug: "festive",
     tagline: "Warm luminous centerpieces for seasonal gatherings",
     description: "Curated multi-tier candle arrangements, warm terracotta finishes, and festive centerpiece designs created for memory-making occasions.",
-    coverImage: "/images/hero-lit.jpg",
+    coverImage: "/images/marigold-candle.webp",
     featuredDesignsCount: 5,
   },
   {
