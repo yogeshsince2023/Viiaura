@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { EnquiryModal } from "@/components/EnquiryModal";
-import { MobileBottomBar } from "@/components/MobileBottomBar";
-import { ScrollProgress } from "@/components/ScrollProgress";
-import { BackToTop } from "@/components/BackToTop";
+import { StorefrontChrome } from "@/components/StorefrontChrome";
 import { EnquiryProvider } from "@/context/EnquiryContext";
 
 export const metadata: Metadata = {
@@ -38,15 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased text-[#1C1917] bg-[#FAF7F2] text-[15px] sm:text-[16px] leading-relaxed selection:bg-[#F7EDE8] selection:text-[#C86446]">
         <EnquiryProvider>
-          {/* Glowing Top Scroll Progress Bar */}
-          <ScrollProgress />
-          <Header />
-          <main className="min-h-screen pb-20 lg:pb-0">{children}</main>
-          <Footer />
-          <EnquiryModal />
-          <MobileBottomBar />
-          {/* Floating Back to Top with Candle Flame Glow */}
-          <BackToTop />
+          <StorefrontChrome>{children}</StorefrontChrome>
         </EnquiryProvider>
       </body>
     </html>
